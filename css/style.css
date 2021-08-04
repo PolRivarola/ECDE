@@ -1,0 +1,448 @@
+/******** Generales *******/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #22333b; }
+
+/******* Clases *******/
+/******* Clases Home *******/
+.homeConteiner, .txtAlign, .displayMad, .maderasImg, .wsp, .instagram, .redes, .displayNos, #box1, #box2, #box3, nav ul {
+  display: flex;
+  justify-content: center; }
+
+.homeTxt {
+  text-align: center;
+  align-items: center; }
+
+.homeMargin {
+  margin: 2em; }
+
+.homeImg {
+  border-radius: 10%;
+  transition: all 1s; }
+
+.homeImg :hover {
+  transform: scale(1.3);
+  outline: #22333b solid 3px; }
+
+.txtAlign {
+  align-items: center; }
+
+.marginFondo {
+  padding-bottom: 4rem; }
+
+/******* Clases clientes *******/
+.cliente {
+  font-size: 1.5em;
+  text-align: center;
+  color: #c6ac8f;
+  letter-spacing: 0.125em;
+  margin-top: 0.5em; }
+
+.opinion {
+  font-size: 1.75em;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%; }
+
+.clientMarginBackground {
+  margin: 10% 0;
+  background-color: #eae0d5;
+  padding: 10% 0; }
+
+.fixBs {
+  font-weight: bold;
+  line-height: normal; }
+
+/******* Clases catalogo *******/
+.maderasIndi {
+  margin-top: 2em; }
+
+.marginPasos {
+  margin: 2em 0; }
+
+.pasos {
+  font-size: 2em;
+  text-align: center;
+  padding-top: .5em;
+  text-decoration: underline; }
+
+.pasoDos {
+  font-size: 1.5em;
+  text-decoration: none; }
+
+.pasoTres {
+  font-size: 2em;
+  text-decoration: none;
+  background-color: #eae0d5;
+  width: 50%;
+  line-height: 3rem;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 2em;
+  margin: 2em 2em 0px 2em; }
+
+.maderasImg {
+  width: 40%;
+  margin: 0px auto;
+  border-radius: 20%; }
+
+.centerP {
+  text-align: center; }
+
+.boton1 {
+  font-size: 1em;
+  background-color: #eae0d5;
+  padding: 0.8em 0.5em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s;
+  padding: 1em; }
+  .boton1:hover {
+    outline: #22333b solid 3px;
+    transform: scale(1.05); }
+
+.wsp {
+  background-color: #42cf42;
+  border-radius: 25px;
+  padding: 1em 0px;
+  width: 50%;
+  transition: all 0.5s; }
+  .wsp:hover {
+    outline: #f5f5f5 solid 3px;
+    transform: scale(1.05); }
+
+.instagram {
+  background-color: #ff8d6b;
+  border-radius: 25px;
+  padding: 1em 0px;
+  width: 50%;
+  transition: all 0.5s; }
+  .instagram:hover {
+    outline: #f5f5f5 solid 3px;
+    transform: scale(1.05); }
+
+.redes {
+  width: 55%;
+  margin: 0px auto;
+  padding-bottom: 2em; }
+
+.iconify {
+  width: 2em;
+  height: 2em; }
+
+/******* Clases nosotros *******/
+.imgNos {
+  border: 4px solid #eae0d5;
+  border-radius: 5%; }
+
+.displayNos {
+  margin: 2em;
+  align-items: center; }
+
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  justify-content: center;
+  grid-template-areas: "area1 area2"  "area1 area3"; }
+
+#box1 {
+  grid-area: area1; }
+  #box1 img {
+    width: 50%;
+    border-radius: 25px;
+    border: 3px #eae0d5 solid;
+    margin: 1em 0; }
+
+#box2 {
+  grid-area: area2;
+  flex-flow: column;
+  text-align: center;
+  overflow: auto;
+  line-height: 1.6em; }
+  #box2 h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em; }
+  #box2 p {
+    margin: 0px auto;
+    font-size: 1.3em;
+    width: 80%; }
+
+#box3 {
+  grid-area: area3;
+  flex-flow: column;
+  text-align: center;
+  overflow: auto;
+  line-height: 1.6em; }
+  #box3 h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em; }
+  #box3 p {
+    min-width: none;
+    margin: 0px auto;
+    font-size: 1.3em;
+    width: 80%; }
+
+/******* Clases contactanos *******/
+#sug {
+  margin-top: 2em; }
+
+.formCent {
+  margin: 0px auto;
+  padding-bottom: 2em; }
+
+/******* Clases error *******/
+.displayError {
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
+
+/******* Secciones *******/
+/******* Header *******/
+header {
+  background-color: #c6ac8f;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center; }
+  header h1 {
+    color: black;
+    font-family: 'Bebas Neue', cursive; }
+  header img {
+    background-color: #eae0d5;
+    border-radius: 50%;
+    transition: all 0.5s; }
+    header img:hover {
+      outline: #22333b solid 3px;
+      transform: scale(1.1); }
+
+/******* Barra de navegacion *******/
+nav ul {
+  background-color: #22333b;
+  color: #eae0d5;
+  list-style: none;
+  text-align: center;
+  padding: 16px;
+  height: 25px;
+  box-sizing: content-box;
+  margin: 0px;
+  line-height: normal; }
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none; }
+  nav a:visited {
+    color: #f5f5f5; }
+
+nav li {
+  width: 10%;
+  margin: 0 1.5em 0 1.5em;
+  transition: all .5s; }
+
+/******* Clases Navegacion *******/
+.transition:hover {
+  border-top: #f5f5f5 solid 3px;
+  border-bottom: #f5f5f5 solid 3px;
+  transform: scale(1.1); }
+
+.submenu {
+  display: none;
+  position: absolute;
+  height: 60px;
+  top: 150%;
+  border: 2px solid #f5f5f5; }
+
+.transition:hover ul {
+  display: block;
+  color: #f5f5f5; }
+
+.submenuItem {
+  display: block;
+  transition: none; }
+
+.submenu a:hover {
+  text-decoration: underline #f5f5f5 solid; }
+
+/******* Clases Header *******/
+.cositoVisto {
+  flex: 1 1px;
+  text-align: center; }
+
+.containerLogo {
+  flex: 2;
+  text-align: center; }
+
+/******* Main *******/
+main {
+  margin: 0px auto;
+  background-color: #c6ac8f;
+  width: 90%; }
+
+main h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: #eae0d5 5px solid; }
+
+main img {
+  width: 30%; }
+
+main a {
+  color: black; }
+
+main a:visited {
+  color: black; }
+
+main label {
+  font-size: 1.5em; }
+
+main form {
+  margin-top: 2em;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  text-align: center; }
+
+main figcaption {
+  text-align: center;
+  padding: 1em; }
+
+/******* Footer *******/
+footer {
+  background-color: #22333b;
+  max-height: 100px; }
+
+footer p {
+  color: #eae0d5;
+  text-align: center;
+  padding: 2em; }
+
+/******* Media query *******/
+@media only screen and (max-width: 600px) {
+  /******* Secciones *******/
+  /******* Header *******/
+  header img {
+    width: 39%; }
+  header h1 {
+    font-size: 1.5em;
+    padding: 1em;
+    width: 100%; }
+  /******* Navegacion *******/
+  nav ul {
+    height: 100%;
+    display: block;
+    line-height: 2em; }
+  nav li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 0px; }
+  nav a {
+    margin: 0px auto;
+    font-size: .8em; }
+  nav ul li:hover ul {
+    display: none; }
+  /******* Clases Home *******/
+  .homeConteinerMedia {
+    margin-top: 3.5em;
+    height: 33%; }
+  .homeImg {
+    width: 50%; }
+  .homeTxt {
+    width: 100%;
+    font-size: 1.2em; }
+  .txtAlign {
+    width: 60%; }
+  /******* Clases Nosotros *******/
+  #grilla {
+    display: none; }
+  #box3, #box2 {
+    height: 500px; } }
+
+@media only screen and (min-width: 600px) {
+  /******* Secciones *******/
+  /******* Header *******/
+  header h1 {
+    font-size: 1.8em; }
+  header img {
+    width: 30%; }
+  /******* Navegacion *******/
+  nav a {
+    font-size: .8em; }
+  /******* Clases Home *******/
+  .homeConteinerMedia {
+    margin-top: 3.5em;
+    height: 33%; }
+  .homeImg {
+    width: 50%; }
+  .homeTxt {
+    width: 100%;
+    font-size: 1.5em; }
+  .txtAlign {
+    width: 60%; }
+  /******* Clases Nosotros *******/
+  #grilla {
+    display: none; }
+  #box3, #box2 {
+    height: 500px; } }
+
+@media only screen and (min-width: 760px) {
+  /******* Secciones *******/
+  /******* Header *******/
+  header img {
+    width: 30%;
+    margin: 3%; }
+  header h1 {
+    font-size: 2em; }
+  /******* Navegacion *******/
+  nav a {
+    font-size: .8em; }
+  /******* Clases Home *******/
+  .homeConteinerMedia {
+    margin-top: 3.5em;
+    height: 33%; }
+  .homeImg {
+    width: 50%; }
+  .homeTxt {
+    width: 100%;
+    font-size: 1.5em; }
+  .txtAlign {
+    width: 60%; }
+  /******* Clases Nosotros *******/
+  .carouselpol {
+    display: none; }
+  #grilla {
+    padding-bottom: 1em;
+    display: grid; }
+  #box3, #box2 {
+    height: 400px; }
+  #box1 img {
+    width: 80%; } }
+
+@media only screen and (min-width: 992px) {
+  /******* Secciones *******/
+  /******* Header *******/
+  header h1 {
+    font-size: 3em; }
+  header img {
+    width: 30%; }
+  /******* Navegacion *******/
+  nav a {
+    font-size: 1.2em; }
+  /******* Clases Home *******/
+  .homeImg {
+    width: 40%; }
+  .homeTxt {
+    width: 80%;
+    font-size: 2.5em; }
+  .txtAlign {
+    width: 40%; }
+  /******* Clases Nosotros *******/
+  #box1 img {
+    width: 60%; } }

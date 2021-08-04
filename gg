@@ -1,0 +1,50 @@
+<div class="marginPasos">
+            <h3 class="pasos">Paso 2: Elegi el vinilo*(+150$)</h3>
+            <div class="displayMad">
+                <div class="maderasIndi">
+                    <img src="../img/do.jpg" class="maderasImg" alt="madera olmo finlandes">
+                    <figcaption>Do It</figcaption>
+                </div>
+                <div class="maderasIndi">
+                    <img src="../img/dont.jpg" class="maderasImg" alt="madera venecia">
+                    <figcaption>Dont Doubt</figcaption>
+                </div>
+                <div class="maderasIndi">
+                    <img src="../img/drink.jpg" class="maderasImg" alt="madera baltico">
+                    <figcaption>I drink coffe periodically </figcaption>
+                </div>
+                <div class="maderasIndi">
+                    <img src="../img/freedom.jpg" class="maderasImg" alt="madera baltico">
+                    <figcaption>Freedom</figcaption>
+                </div>
+            </div>
+            <div class="displayMad">
+                <div class="maderasIndi">
+                    <img src="../img/grlpwr.jpg" class="maderasImg" alt="madera baltico">
+                    <figcaption>Girl Power</figcaption>
+                </div>
+                <div class="maderasIndi">
+                    <img src="../img/infinity.jpg" class="maderasImg" alt="madera baltico">
+                    <figcaption>Infinity</figcaption>
+                </div>
+                <div class="maderasIndi">
+                    <img src="../img/normal.jpg" class="maderasImg" alt="madera baltico">
+                    <figcaption>Normal is Boring</figcaption>
+                </div>
+                <div class="maderasIndi">
+                    <img src="../img/think.jpg" class="maderasImg" alt="madera baltico">
+                    <figcaption>Think outisde the box</figcaption>
+                </div>
+            </div>
+            <p class="pasos pasoTres">O envianos tu propio diseño y nosotros lo pondremos en tu atril! (+350$) </p>
+            <p class="centerP">*Los vinilos estan disponibles unicamente en negro.</p>
+        </div>
+<!-- Paso 3 -->
+        <div class="marginPasos">
+            <h3 class="pasos">Paso 3:Hablanos!</h3>
+            <p class="pasos pasoTres">
+                Envianos un mensaje por <a href="https://www.instagram.com/elcositodelestudio/">Instagram</a>
+                con los modelos que elegiste, y en los proximos dias te lo llevamos!
+            </p>
+        </div>
+    </main>
