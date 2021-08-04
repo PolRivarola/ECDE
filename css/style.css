@@ -197,6 +197,9 @@ body {
   margin: 0px auto;
   padding-bottom: 2em; }
 
+.formPseudo:focus {
+  border: 5px solid rgba(77, 107, 241, 0.5); }
+
 /******* Clases error *******/
 .displayError {
   display: flex;
@@ -256,7 +259,8 @@ nav li {
   position: absolute;
   height: 60px;
   top: 150%;
-  border: 2px solid #f5f5f5; }
+  border: 2px solid #f5f5f5;
+  border-radius: 25px; }
 
 .transition:hover ul {
   display: block;

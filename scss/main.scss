@@ -250,6 +250,11 @@ body{
     padding-bottom: 2em;
 }
 
+.formPseudo:focus{
+     
+    border: 5px solid rgba(77, 107, 241, 0.5);
+      
+}
 
 /******* Clases error *******/
 .displayError{
@@ -332,6 +337,7 @@ nav{
     height: 60px;
     top: 150%;
     border: 2px solid $colorUno;
+    border-radius: 25px;
 }
 
 .transition:hover ul{

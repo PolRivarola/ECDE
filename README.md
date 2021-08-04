@@ -12,9 +12,9 @@ Even though we have a moderate Instagram presence, we felt the the need to give 
 
 ## Contributors
 
-*Pol Rivarola <rivarolapol@gmail.com>
+-Pol Rivarola <rivarolapol@gmail.com>
 
---
+---
 
 ## Technologies
 
