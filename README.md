@@ -4,9 +4,9 @@
 
 ## What is it?
 
-ECDE is an small business, which mainly focuses in the sale of book stands. These can be customized through the decals provided by us or any other of your choice.
+ECDE is a small business, which mainly focuses in the sale of book stands. These can be customized through the decals provided by us or any other of your choice.
 
-Even though we have a moderate Instagram presence, we felt the the need to give this step as to become a more developed buissnes, in adittion, owr friend needed to make a site for a web design class he's taking.
+Even though we have a moderate Instagram presence, we felt the need to give this step as to become a more developed business, in adittion, owr friend needed to make a site for a web design class he's taking.
 
 ---
 
@@ -18,4 +18,4 @@ Even though we have a moderate Instagram presence, we felt the the need to give 
 
 ## Technologies
 
-*Bootstrap 4 
+*Bootstrap 5 
