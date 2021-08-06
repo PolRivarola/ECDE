@@ -242,17 +242,29 @@ body{
 }
 
 /******* Clases contactanos *******/
-#sug{
-    margin-top: 2em;
+
+#form{
+    display: flex;
+    flex-flow: column;
 }
+
 .formCent{
     margin: 0px auto;
     padding-bottom: 2em;
 }
 
-.formPseudo:focus{
+label{
+    font-weight: bold;
+}
+
+.formPseudo{
+
+    margin: 1.5em 0 1em;
+
+    &:focus{
      
-    border: 5px solid rgba(77, 107, 241, 0.5);
+        border: 5px solid rgba(77, 107, 241, 0.5);
+    }
       
 }
 
@@ -340,9 +352,11 @@ nav{
     border-radius: 25px;
 }
 
-.transition:hover ul{
-    display: block;
-    color: $colorUno;
+.transition:hover{ 
+    ul{
+        display: block;
+        color: $colorUno;
+    }
 }
 
 .submenuItem{
@@ -449,8 +463,10 @@ footer p{
         font-size: .8em;
     }
 
-    nav ul li:hover ul{
-        display: none;
+    .transition:hover{ 
+        ul{
+            display: none;
+        }
     }
 
     /******* Clases Home *******/
@@ -484,6 +500,11 @@ footer p{
        height: 500px;
    }
 
+   /******* Clases Nosotros *******/
+   .pasoTres{
+       font-size: 1.5em;
+       width: 60%;
+   }
    
 }
 

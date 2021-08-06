@@ -190,15 +190,21 @@ body {
     width: 80%; }
 
 /******* Clases contactanos *******/
-#sug {
-  margin-top: 2em; }
+#form {
+  display: flex;
+  flex-flow: column; }
 
 .formCent {
   margin: 0px auto;
   padding-bottom: 2em; }
 
-.formPseudo:focus {
-  border: 5px solid rgba(77, 107, 241, 0.5); }
+label {
+  font-weight: bold; }
+
+.formPseudo {
+  margin: 1.5em 0 1em; }
+  .formPseudo:focus {
+    border: 5px solid rgba(77, 107, 241, 0.5); }
 
 /******* Clases error *******/
 .displayError {
@@ -350,7 +356,7 @@ footer p {
   nav a {
     margin: 0px auto;
     font-size: .8em; }
-  nav ul li:hover ul {
+  .transition:hover ul {
     display: none; }
   /******* Clases Home *******/
   .homeConteinerMedia {
@@ -367,7 +373,11 @@ footer p {
   #grilla {
     display: none; }
   #box3, #box2 {
-    height: 500px; } }
+    height: 500px; }
+  /******* Clases Nosotros *******/
+  .pasoTres {
+    font-size: 1.5em;
+    width: 60%; } }
 
 @media only screen and (min-width: 600px) {
   /******* Secciones *******/
