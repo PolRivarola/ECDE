@@ -63,8 +63,7 @@ body {
 .pasos {
   font-size: 2em;
   text-align: center;
-  padding-top: .5em;
-  text-decoration: underline; }
+  padding-top: .5em;}
 
 .pasoDos {
   font-size: 1.5em;
@@ -149,7 +148,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 400px);
   justify-content: center;
-  grid-template-areas: "area1 area2"  "area1 area3"; }
+  grid-template-areas: "area1 area2" 
+ "area1 area3"; }
 
 #box1 {
   grid-area: area1; }
