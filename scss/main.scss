@@ -7,8 +7,9 @@
 }
 
 body{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: $colorDos;
+    
 }
 
 /******* Clases *******/
@@ -17,10 +18,12 @@ body{
 .homeConteiner{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .homeTxt{
     text-align: center;
     align-items: center;
+    
 }
 .homeMargin{
     margin: 2em;
@@ -28,15 +31,13 @@ body{
 .homeImg{
     border-radius: 10%; 
     transition: all 1s;
+    height: 20%;
+    
 }
-.homeImg :hover{
-    transform: scale(1.3);
-    outline: $colorDos solid 3px;
 
-}
 .txtAlign{
     @extend .homeConteiner;
-    align-items: center;
+    
 }
 
 .marginFondo{
@@ -55,6 +56,7 @@ body{
     margin:0 auto ;
     text-align: center;
     width: 70%;
+    color: $colorCuatro;
 }
 .clientMarginBackground{
     margin: 10% 0 ;
@@ -118,17 +120,22 @@ body{
 .boton1{
     font-size: 1em;
     background-color: $colorTres;
+    color: $colorUno;
     padding: 0.8em 0.5em;
     border-radius: 10px ;
     margin-bottom: 2em;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.5s;
+    transition: all 0.2s;
     padding: 1em;
     
     &:hover{
         outline: $colorDos solid 3px;
         transform: scale(1.05);
+    }
+
+    &:visited{
+        color: $colorUno;
     }
 }
 
@@ -229,6 +236,7 @@ body{
     text-align: center;
     overflow: auto;
     line-height: 1.6em;
+    border-top: 3px solid $colorTres;
     h3{
         margin-bottom: 1em;
         font-size: 1.5em;
@@ -283,33 +291,29 @@ header {
     background-color: $colorCuatro;
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
     align-items: center;
-
-    h1{
-        color: black;
-        font-family: 'Bebas Neue', cursive;
-    }
-
-    img{   
-        background-color: $colorTres;
+    justify-content: start;
+    padding: 2% 5%;
+    img{
         border-radius: 50%;
-        transition: all 0.5s;
-    
+        width: 100%;
+    }
+    a{
+        width:5%;
+        margin-right: 1em;
 
-        &:hover{
-            outline: $colorDos solid 3px;
-            transform: scale(1.1);
-        }
+    }
+    h1{
+        color: $colorTres;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 0.4em; 
     }
 }
- 
 /******* Barra de navegacion *******/
 nav{    
     ul{
         @extend .homeConteiner;
         background-color: $colorDos;
-        color: $colorTres;
         list-style: none;
         text-align: center;
         padding: 16px;
@@ -319,78 +323,40 @@ nav{
         line-height: normal;
     }
     a{
-        color: $colorUno;
+        color: $colorTres;
         text-decoration: none;
-
+        transition: all .2s;
         &:visited{
-            color: $colorUno;
+            color: $colorTres;
         }
+        
+        
+        
     }
 
     li{
         width: 10%;
         margin: 0 1.5em 0 1.5em;
-        transition: all .5s;
+        
     }
 }
-/******* Clases Navegacion *******/
 
 .transition:hover{
-    border-top: $colorUno solid 3px;
-    border-bottom: $colorUno solid 3px;
+    border-top: $colorTres solid 3px;
+    border-bottom: $colorTres solid 3px;
     transform: scale(1.1); 
-}
-
-
-// Clases necesarias para evitar nesting excesivo
-.submenu{
-    display: none;
-    position: absolute;
-    height: 60px;
-    top: 150%;
-    border: 2px solid $colorUno;
-    border-radius: 25px;
-}
-
-.transition:hover{ 
-    ul{
-        display: block;
-        color: $colorUno;
-    }
-}
-
-.submenuItem{
-    display: block;
-    transition: none;
-}
-
-.submenu{ 
-    a:hover{
-        text-decoration:underline $colorUno solid ;
-    }
-}
-
-/******* Clases Header *******/
-.cositoVisto {
-    
-    flex: 1 1px;
-    text-align: center;
-}
-.containerLogo {
-    flex: 2;
-    text-align: center;
 }
 /******* Main *******/
 main{
     margin: 0px auto;
-    background-color: #c6ac8f;
+    background-color: $colorCuatro;
     width: 90%;  
 }
 main h2{
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     padding: 1em 0;
-    border-bottom: #eae0d5 5px solid;
+    border-bottom: $colorTres 5px solid;
     
 }
 main img{
@@ -423,12 +389,17 @@ main figcaption{
 footer{
     background-color: $colorDos;
     max-height: 100px;
-}
-footer p{ 
-    color: $colorTres;
-    text-align: center;
-    padding: 2em;
+    
+    a{ 
+        @extend .homeConteiner;
+        color: $colorTres;
+        text-decoration: none;
+        padding: 1em;
 
+        &:visited{
+            color: $colorTres;
+        }
+    }
 }
 
 /******* Media query *******/
@@ -436,36 +407,43 @@ footer p{
 @media only screen and (max-width:600px){
     /******* Secciones *******/
     /******* Header *******/
-    header img{
-        width: 39%;
+    header{
+        justify-content: center;
+        padding: 0px;
+        a{
+        width: 10%;
+        margin: 0px;
     }
-    header h1{
-        font-size: 1.5em;
-        padding: 1em;
-        width: 100%;
+        h1{
+        display: none;
+    }
     }
     /******* Navegacion *******/
 
-    nav ul{
-        height: 100%;
-        display: block;
-        line-height: 2em;
-    }
-    nav li{
-        width: 100%;
-        display: flex; 
-        justify-content: center;
-        margin: 0px 0px 0px 0px;
-    }
+    nav{
+        ul{
+            height: 100%;
+            display: block;
+            line-height: 2em;
+            }    
+        li{
+            width: 100%;
+            display: flex; 
+            justify-content: center;
+            margin: 0px 0px 0px 0px;
+        }   
     
-    nav a{
-        margin: 0px auto;
-        font-size: .8em;
+    
+        a{
+            margin: 0px auto;
+            font-size: .8em;
+        }
     }
 
-    .transition:hover{ 
-        ul{
-            display: none;
+    /******* Main *******/
+    main{
+        h2{
+            font-size: 1.5em;
         }
     }
 
@@ -500,7 +478,7 @@ footer p{
        height: 500px;
    }
 
-   /******* Clases Nosotros *******/
+   /******* Clases Catalogo *******/
    .pasoTres{
        font-size: 1.5em;
        width: 60%;
@@ -511,17 +489,20 @@ footer p{
 @media only screen and (min-width:600px){
     /******* Secciones *******/
     /******* Header *******/
-    header h1{
-        font-size: 1.8em;
-    }
-
-    header img{
-        width: 30%;
+    header {
+        h1{
+            font-size: 1.8em;
+        }
+        a{
+            width: 10%;
+        }
     }
 
     /******* Navegacion *******/
-    nav a{
-        font-size: .8em;  
+    nav{ 
+        a{
+            font-size: .8em;  
+        }
     }
 
     /******* Clases Home *******/
@@ -558,19 +539,25 @@ footer p{
 @media only screen and (min-width:760px){
     /******* Secciones *******/
     /******* Header *******/
-    header img{
-        width: 30%;
-        margin: 3%;
-    }
+    
+    header{
 
-    header h1{
-        font-size: 2em;
+        a{
+            width: 10%;
+        }
+        
+        h1{
+            font-size: 2em;
+        }
     }
     /******* Navegacion *******/
-    nav a{
-        font-size: .8em;
-        
+    nav{ 
+        a{
+            font-size: .8em;
+        }
     }
+   
+
     /******* Clases Home *******/
     .homeConteinerMedia{
         margin-top: 3.5em;
@@ -601,25 +588,29 @@ footer p{
         height: 400px;
     }
     
-    #box1 img{
-        width: 80%;
+    #box1{
+        img{
+            width: 80%;
+    
+        }
     }
-
 }
 
 @media only screen and (min-width:992px){
     /******* Secciones *******/
-    /******* Header *******/
-    header h1{
-        font-size: 3em;
-    }
-    header img{   
-        width: 30%;
-    }
-    /******* Navegacion *******/
-    nav a{
-        font-size: 1.2em;
+    header{
 
+        a{
+            width:5%;
+        }
+        
+    }
+    
+    /******* Navegacion *******/
+    nav{ 
+        a{
+            font-size: 1.2em;
+        }
     }
     
     /******* Clases Home *******/
@@ -637,9 +628,11 @@ footer p{
     /******* Clases Nosotros *******/
 
     
-    #box1 img{
-        width: 60%;
+    #box1{ 
+        img{
+            width: 60%;
+    
+        }
     }
-
 }
 
