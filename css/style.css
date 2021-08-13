@@ -353,11 +353,16 @@ footer {
   .pasoTres {
     font-size: 1em;
     width: 60%; }
+  .pasoDos {
+    font-size: 1.2em; }
   #hide {
     display: none; }
-  /******* Clases Catalogo *******/
+  /******* Clases Contacto *******/
   .formPseudo {
-    width: 15em; } }
+    width: 15em; }
+  /******* Clases Clientes *******/
+  .opinion {
+    font-size: 1em; } }
 
 @media only screen and (min-width: 600px) {
   /******* Secciones *******/
