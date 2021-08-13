@@ -340,7 +340,7 @@ footer {
     width: 50%; }
   .homeTxt {
     width: 100%;
-    font-size: 1.2em; }
+    font-size: .75em; }
   .txtAlign {
     width: 60%; }
   /******* Clases Nosotros *******/
@@ -351,7 +351,7 @@ footer {
     border-top: none; }
   /******* Clases Catalogo *******/
   .pasoTres {
-    font-size: 1.5em;
+    font-size: 1em;
     width: 60%; }
   #hide {
     display: none; }
